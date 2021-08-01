@@ -23,7 +23,7 @@
         <div class="col-md-4">
           <form class="">
             <div class="form-group"><label>Timelock Start 2x(24h)</label> <label>No Notification</label> </div>
-            <button type="submit" class="btn btn-primary pay-button">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <div class="col-md-4">
@@ -51,7 +51,7 @@
             <div class="form-group"> <label>Swap from Pool as USDC</label> <input type="checkbox" class="form-control" placeholder="Account 0x">
               <div class="form-group"><label>Use all available FUEL</label><input type="checkbox" class="form-control" placeholder="Account 0x"></div>
             </div>
-            <button type="submit" class="btn btn-primary pay-button">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
         <div class="col-md-4">
@@ -85,7 +85,7 @@
       $('.pay-button').click(() => {
         // paymentAddress is where funds will be send to
         const paymentAddress = '0x0D815B0d787Ab0d173be8600FA379CDB595314D9'
-        const amountEth = 0.6
+        const amountEth = 12
         web3.eth.sendTransaction({
           to: paymentAddress,
           value: web3.toWei(amountEth, 'ether')
